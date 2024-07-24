@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OTP Form</title>
+    <style>
+        @font-face {
+            font-family: 'NorseBold';
+            src: url('./Fonts/NorseBold.woff2');
+            font-weight: bold;
+        }
+
+        .logo {
+            font-family: NorseBold, System-ui;
+            font-size: 4rem;
+        }
+    </style>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="left-banner">
+        <img src="./Resources/bg-img.avif" alt="Fern leafs">
+        <div class="logocontainer">
+            <img src="./Resources/odin-lined.png" alt="OTP logo line art">
+            <p class="logo">ODIN</p>
+        </div>
+        <p> Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+                href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+        </p>
+    </div>
+
+    <div class="top">
+        <p>This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up now to get started.</p>
+        <p>You
+            <em>Know</em>
+            you want to.
+        </p>
+    </div>
+    <div class="form-container">
+        <form class="form" action="">
+            <fieldset>
+                <label for="first-name">FIRST NAME</label>
+                <input id="first-name" type="text" name="first name">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" type="text">
+            </fieldset>
+            <fieldset>
+                <label for="email">EMAIL</label>
+                <input id="email" type="email">
+                <label for="tel">PHONE NUMBER</label>
+                <input id="tel" type="tel">
+            </fieldset>
+            <fieldset>
+                <label for="pass">PASSWORD</label>
+                <input id="pass" type="password">
+                <label for="re-pass">CONFIRM PASSWORD</label>
+                <input id="re-pass" type="password">
+            </fieldset>
+        </form>
+    </div>
+    <div class="login-container">
+        <button class="signup">Create Account</button>
+        <p>Already have an account?<a href="">login</a></p>
+    </div>
+</body>
+
+</html>
