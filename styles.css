@@ -49,6 +49,8 @@ body {
 
 .main-container {
     flex-flow: nowrap column;
+    justify-content: stretch;
+    flex: 2 1 auto;
 }
 
 .left-banner {
@@ -59,15 +61,15 @@ body {
     height: 100vh;
 }
 
-.main-container {
-    flex: 2 1 auto;
-    justify-content: stretch;
-}
-
 .top,
 .login-container,
 .form-container {
     padding-left: 2rem;
+}
+
+.form-container {
+    flex: 1;
+    box-shadow: 0 4px 4px lightgray;
 }
 
 .logo-container {
@@ -102,6 +104,7 @@ label {
 }
 
 .top {
+    flex: 1;
     background-color: var(--grey);
     font-weight: bold;
 }
@@ -138,4 +141,28 @@ input:focus {
 
 input:invalid {
     border: solid darkred 2px;
+}
+
+.login-container {
+    flex: 1;
+    flex-flow: nowrap column;
+    align-items: flex-start;
+    background-color: var(--grey);
+    padding-top: 2rem;
+}
+
+.login-container p a {
+    color: var(--green);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup {
+    height: 2.5em;
+    width: 12em;
+    color: white;
+    background-color: var(--green);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 2px 3px 2px lightgray;
 }
